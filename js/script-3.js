@@ -168,7 +168,6 @@ c переносом строки('\n')
 
 function calculateTotalPrice(array, prop) {
   "use strict";
-  // Write code under this line
 }
 
 // Объекты и ожидаемый результат
@@ -182,7 +181,7 @@ const products = [
   { name: "Захват", price: 1200, quantity: 2 },
 ];
 
-//console.log(calculateTotalPrice(products, 'Радар'));
+// console.log(calculateTotalPrice(products, "Радар"));
 // 9080
 
 //console.log(calculateTotalPrice(products, 'Сканер'));
