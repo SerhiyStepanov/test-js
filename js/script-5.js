@@ -283,15 +283,52 @@ class Car {
 // */
 
 class Car {
-  getSpecs(car) {}
+  static getSpecs(car) {
+    return `maxSpeed : ${this._maxSpeed},speed : ${this._speed},isOn : ${this._isOn},distance : ${this._distance},price : ${this._price} `;
+  }
 
-  constructor(config = {}) {
+  constructor({ maxSpeed, speed, isOn, distance, price } = {}) {
     this._maxSpeed = maxSpeed;
-    this._speed = speed;
-    this._isOn = isOn;
-    this._distance = distance;
+    this._speed = 0;
+    this._isOn = false;
+    this._distance = 0;
     this._price = price;
   }
-}
 
-console.log(Car);
+  get price() {
+    return this._price;
+  }
+  set price(newPrice) {
+    this._price = newPrice;
+  }
+
+  turnOn() {
+    this._isOn = true;
+  }
+
+  turnOff() {
+    this._isOn = false;
+    this._speed = 0;
+  }
+
+  accelerate(value) {
+    if (this._speed < this._maxSpeed) {
+      this._speed = this._speed + value;
+    }
+    return this._speed;
+  }
+
+  decelerate(value) {
+    if (this._speed > 0) {
+      this._speed = this._speed - value;
+    }
+    return this._speed;
+  }
+
+  drive(hours) {
+    if (this._isOn) {
+      this._distance = this._speed * hours;
+    }
+    return this._distance;
+  }
+}
