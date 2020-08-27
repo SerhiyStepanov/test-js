@@ -198,4 +198,4 @@ c переносом строки('\n')
 // console.log(calculateTotalPrice(products, "Захват"));
 // // 2400
 
-//console.log(calculateTotalPrice(products, 'Дроид'));
+// console.log(calculateTotalPrice(products, "Дроид"));
