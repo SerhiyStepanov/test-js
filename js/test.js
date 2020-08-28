@@ -20,7 +20,6 @@
 //   remove(productName) {
 //     // const { items } = this;
 //     for (let i = 0; i < this.items.length; i += 1) {
-//       //   console.log(this.items[i]);
 //       const item = this.items[i];
 //       if (productName === item.name) {
 //         this.items.splice(i, 1);
@@ -53,10 +52,11 @@
 // cart.add({ name: "banan", price: 100 });
 // cart.add({ name: "banan", price: 100 });
 
-// console.table(cart.getItems());
+// // console.table(cart.getItems());
 // // cart.remove("lemon");
 // // console.log(cart.getItems());
 // // // cart.clear();
 // // // console.log(cart.getItems());
+// // console.log(cart.countTotalPrice());
 
-// console.log(cart.countTotalPrice());
+// ------------
