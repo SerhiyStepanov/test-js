@@ -328,10 +328,59 @@ filter, includes и map
 исходный массив. Т.е. нельзя использовать for, splice, push и т.п. мутирующие методы.*/
 
 // Write code under this line
-const getUsersWithFriend = (array, friendName) => array;
+// const getUsersWithFriend = (array, friendName) =>
+//   array
+//     .filter(({ friends }) => friends.includes(friendName))
+//     .map(({ name }) => name);
 
-// console.log(getUsersWithFriend(users, 'Briana Decker'));
-// [ 'Sharlene Bush', 'Sheree Anthony' ]
+// console.log(getUsersWithFriend(users, "Briana Decker"));
+// // [ 'Sharlene Bush', 'Sheree Anthony' ]
 
-// console.log(getUsersWithFriend(users, 'Goldie Gentry'));
-// [ 'Elma Head', 'Sheree Anthony' ]
+// console.log(getUsersWithFriend(users, "Goldie Gentry"));
+// // [ 'Elma Head', 'Sheree Anthony' ]
+
+/*
+Задача 6-9
+sort и map
+
+Получи массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (поле friends)
+Избегаем мутации исходного массива: т.к. метод sort изменяет (мутирует) исходный массив, то следует сделать
+копию массива и сортировать уже копию, а не исходный массив.**/
+
+// // Write code under this line
+// const getNamesSortedByFriendsCount = (array) =>
+//   [...array]
+//     .sort((a, b) => a.friends.length - b.friends.length)
+//     .map(({ name }) => name);
+
+// console.log(getNamesSortedByFriendsCount(users));
+// // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
+
+/**
+ * Задача 6-10
+reduce, filter, sort
+
+Получи массив всех умений всех пользователей (поле skills), при этом не должно быть
+ повторяющихся умений и они должны быть отсортированы в алфавитном порядке.
+ */
+
+// Write code under this line
+const getSortedUniqueSkills = (array) =>
+  array
+    .reduce((acc, { skills }) => acc.concat(skills), [])
+    .filter((skills, index, array) => {
+      return array.indexOf(skills) === index;
+    })
+    .sort();
+
+console.log(getSortedUniqueSkills(users));
+/* [ 'adipisicing', 'amet',
+ 'anim', 'commodo',
+ 'culpa', 'elit',
+ 'ex', 'ipsum',
+ 'irure', 'laborum',
+ 'lorem', 'mollit',
+ 'non', 'nostrud',
+ 'nulla', 'proident',
+ 'tempor', 'velit',
+ 'veniam' ]; */
