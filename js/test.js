@@ -61,3 +61,41 @@
 // // console.log(cart.getItems());
 // // console.log(cart);
 
+//  перебор масива
+
+const numbers = [2, 4, 25, 6, 57, 10, 11, 15, 20, 22, 30, 70, 45, 50];
+
+const players = [
+  { id: "player-1", name: "Mango", timePlayer: 200, points: 50, onLine: false },
+  { id: "player-2", name: "Polly", timePlayer: 50, points: 100, onLine: false },
+  { id: "player-3", name: "Pepsi", timePlayer: 150, points: 150, onLine: true },
+  { id: "player-4", name: "Cola", timePlayer: 50, points: 100, onLine: false },
+  { id: "player-5", name: "Kiwi", timePlayer: 100, points: 150, onLine: false },
+];
+
+console.table(players);
+
+const product = [
+  { name: "Kiwi", id: "001", prices: 50, tags: ["css", "js", "c#"] },
+  { name: "banan", id: "002", prices: 10, tags: ["js", "html", "c#"] },
+  { name: "coconut", id: "003", prices: 20, tags: ["css", "html", "c#"] },
+  { name: "coca", id: "004", prices: 35, tags: ["css", "noda", "c#"] },
+];
+
+console.table(product);
+
+const allTags = product.reduce((acc, el) => [...acc, ...el.tags], []);
+// console.log(allTags);
+
+const moreAllTags = allTags.reduce((acc, tag) => {
+  return { ...acc, [tag]: acc[tag] ? acc[tag] + 1 : 1 };
+}, {});
+
+console.log(moreAllTags);
+
+// const sortTagUnic = sortTag.indexOf((val, index, array) => {
+//   if (val === index) {
+//     return val;
+//   }
+// });
+// console.log(sortTagUnic);
