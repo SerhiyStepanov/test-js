@@ -60,3 +60,4 @@
 // console.log(`Total price : ${cart.countTotalPrice()} $`);
 // // console.log(cart.getItems());
 // // console.log(cart);
+
