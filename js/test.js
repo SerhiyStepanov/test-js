@@ -83,19 +83,3 @@ const product = [
 ];
 
 console.table(product);
-
-const allTags = product.reduce((acc, el) => [...acc, ...el.tags], []);
-// console.log(allTags);
-
-const moreAllTags = allTags.reduce((acc, tag) => {
-  return { ...acc, [tag]: acc[tag] ? acc[tag] + 1 : 1 };
-}, {});
-
-console.log(moreAllTags);
-
-// const sortTagUnic = sortTag.indexOf((val, index, array) => {
-//   if (val === index) {
-//     return val;
-//   }
-// });
-// console.log(sortTagUnic);
