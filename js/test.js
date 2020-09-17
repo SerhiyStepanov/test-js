@@ -1,85 +1,74 @@
-// const cart = {
-//   items: [],
+// task-1
 
-//   getItems() {
-//     return this.items;
+// const liItemEl = document.querySelectorAll(".item");
+// console.log(`В списке ${liItemEl.length} категории.`);
+
+// const liItemContentEl = liItemEl.forEach((element) => {
+//   // console.log(element);
+//   const itemTitleEl = element.firstElementChild.textContent;
+//   const liItemEl = element.lastElementChild.children.length;
+//   console.log(`Категория: ${itemTitleEl} `);
+//   console.log(`Количество элементов: ${liItemEl}`);
+// });
+
+// task-2
+
+// const ingredients = [
+//   "Картошка",
+//   "Грибы",
+//   "Чеснок",
+//   "Помидоры",
+//   "Зелень",
+//   "Приправы",
+// ];
+
+// const navIngredientsEl = document.querySelector("#ingredients");
+// console.log(navIngredientsEl);
+
+// const navLiElIngredients = ingredients.map((element) => {
+//   const liElement = document.createElement("li");
+//   liElement.textContent = element;
+//   return liElement;
+// });
+
+// navIngredientsEl.append(...navLiElIngredients);
+
+// task-3
+
+// const images = [
+//   {
+//     url:
+//       "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "White and Black Long Fur Cat",
 //   },
-
-//   add(product) {
-//     for (const item of this.items) {
-//       if (item.name === product.name) {
-//         item.quantity += 1;
-//         return;
-//       }
-//     }
-//     const newProduct = { ...product, quantity: 1 };
-
-//     this.items.push(newProduct);
+//   {
+//     url:
+//       "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "Orange and White Koi Fish Near Yellow Koi Fish",
 //   },
-
-//   remove(productName) {
-//     for (let i = 0; i < this.items.length; i += 1) {
-//       // console.log(this.items[i]);
-//       if (this.items[i].name === productName) {
-//         this.items.splice(i, 1);
-//       }
-//     }
+//   {
+//     url:
+//       "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "Group of Horses Running",
 //   },
+// ];
 
-//   clear() {
-//     return (this.items = []);
-//   },
+// const imgGalleryEl = document.querySelector("#gallery");
+// console.log(imgGalleryEl);
 
-//   countTotalPrice() {
-//     let total = 0;
-//     for (const { price, quantity } of this.items) {
-//       // console.log(item);
-//       total += price * quantity;
-//     }
-//     return total;
-//   },
-// };
+// const imgGallery = images.map((item) => {
+//   // console.log(item);
+//   const liItemEl = document.createElement("li");
+//   const imgItemEl = document.createElement("img");
 
-// cart.add({ name: "chees", price: 30 });
-// cart.add({ name: "apple", price: 50 });
-// cart.add({ name: "lemon", price: 60 });
-// cart.add({ name: "chees", price: 30 });
-// cart.add({ name: "apple", price: 50 });
-// cart.add({ name: "lemon", price: 60 });
-// cart.add({ name: "chees", price: 30 });
-// cart.add({ name: "banan", price: 20 });
-// cart.add({ name: "chees", price: 30 });
-// cart.add({ name: "chees", price: 30 });
-// cart.add({ name: "cuconut", price: 75 });
+//   imgItemEl.src = `${item.url}`;
+//   imgItemEl.alt = `${item.alt}`;
 
-// console.table(cart.getItems());
+//   liItemEl.insertAdjacentElement("afterbegin", imgItemEl);
+//   return liItemEl;
+// });
 
-// // cart.getItems();
-// // cart.remove(productName);
-// // cart.clear();
-// console.log(`Total price : ${cart.countTotalPrice()} $`);
-// // console.log(cart.getItems());
-// // console.log(cart);
+// // console.log(...imgGallery);
+// imgGalleryEl.append(...imgGallery);
 
-//  перебор масива
-
-const numbers = [2, 4, 25, 6, 57, 10, 11, 15, 20, 22, 30, 70, 45, 50];
-
-const players = [
-  { id: "player-1", name: "Mango", timePlayer: 200, points: 50, onLine: false },
-  { id: "player-2", name: "Polly", timePlayer: 50, points: 100, onLine: false },
-  { id: "player-3", name: "Pepsi", timePlayer: 150, points: 150, onLine: true },
-  { id: "player-4", name: "Cola", timePlayer: 50, points: 100, onLine: false },
-  { id: "player-5", name: "Kiwi", timePlayer: 100, points: 150, onLine: false },
-];
-
-console.table(players);
-
-const product = [
-  { name: "Kiwi", id: "001", prices: 50, tags: ["css", "js", "c#"] },
-  { name: "banan", id: "002", prices: 10, tags: ["js", "html", "c#"] },
-  { name: "coconut", id: "003", prices: 20, tags: ["css", "html", "c#"] },
-  { name: "coca", id: "004", prices: 35, tags: ["css", "noda", "c#"] },
-];
-
-console.table(product);
+// task-4
