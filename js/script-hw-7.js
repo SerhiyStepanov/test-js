@@ -53,22 +53,100 @@
 //   },
 // ];
 
-// const imgGalleryEl = document.querySelector("#gallery");
-// console.log(imgGalleryEl);
+// const galleryImages = document.querySelector("#gallery");
+// console.log(gallery);
 
-// const imgGallery = images.map((item) => {
-//   // console.log(item);
-//   const liItemEl = document.createElement("li");
-//   const imgItemEl = document.createElement("img");
+// const markupGallery = images.map(({ url, alt }) => {
+//   const liEl = document.createElement("li");
+//   liEl.classList.add("gallery_list");
+//   const imgEl = document.createElement("img");
+//   imgEl.classList.add("gallery_img");
 
-//   imgItemEl.src = `${item.url}`;
-//   imgItemEl.alt = `${item.alt}`;
+//   imgEl.src = `${url}`;
+//   imgEl.alt = `${alt}`;
+//   imgEl.width = "240";
 
-//   liItemEl.insertAdjacentElement("afterbegin", imgItemEl);
-//   return liItemEl;
+//   liEl.appendChild(imgEl);
+//   return liEl;
 // });
 
-// // console.log(...imgGallery);
-// imgGalleryEl.append(...imgGallery);
+// galleryImages.append(...markupGallery);
 
-// task-4
+// task - 4
+
+// const decrementBtn = document.querySelector("button[data-action=decrement]");
+// console.log(decrementBtn);
+// const incrementBtn = document.querySelector("button[data-action=increment]");
+// console.log(incrementBtn);
+// const value = document.querySelector("#value");
+// console.log(value);
+
+// decrementBtn.addEventListener("click", onClickDecrement);
+// incrementBtn.addEventListener("click", onClickIncrement);
+
+// const counter = {
+//   value: 0,
+//   decrement() {
+//     this.value -= 1;
+//   },
+//   increment() {
+//     this.value += 1;
+//   },
+// };
+
+// function onClickDecrement() {
+//   counter.decrement();
+//   value.textContent = counter.value;
+// }
+// function onClickIncrement() {
+//   counter.increment();
+//   value.textContent = counter.value;
+// }
+
+// task -5
+
+// const inputEl = document.querySelector("#name-input");
+// console.log(inputEl);
+// const spanEl = document.querySelector("#name-output");
+// console.log(spanEl);
+
+// inputEl.addEventListener("input", onInputValue);
+
+// function onInputValue(event) {
+//   console.log(event.currentTarget.value);
+//   if (event.currentTarget.value !== "") {
+//     spanEl.textContent = event.currentTarget.value;
+//   } else {
+//     spanEl.textContent = "незнакомец";
+//   }
+// }
+
+// task -6
+
+// const input = {
+//   type: "text",
+//   id: "validation-input",
+//   datalength: "6",
+//   placeholder: "Введи 6 символов",
+// };
+// const validationInput = document.querySelector("#validation-input");
+// console.log(validationInput);
+
+// validationInput.addEventListener("input", onValidationInput);
+// validationInput.addEventListener("blur", onBlurInput);
+
+// function onValidationInput(event) {
+//   console.log(event.currentTarget.value);
+// }
+
+// function onBlurInput(event) {
+//   if (
+//     event.currentTarget.value.length !== Number(validationInput.dataset.length)
+//   ) {
+//     validationInput.classList.add("invalid");
+//     validationInput.classList.remove("valid");
+//   } else {
+//     validationInput.classList.add("valid");
+//     validationInput.classList.remove("invalid");
+//   }
+// }
