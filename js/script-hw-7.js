@@ -150,20 +150,3 @@
 //     validationInput.classList.remove("invalid");
 //   }
 // }
-
-function isDivideBy(number, a, b) {
-  //   console.log(number / a);
-  //   console.log(number / b);
-  if (number % a === 0 && number % b === 0) {
-    console.log();
-    return true;
-  } else {
-    return false;
-  }
-}
-console.log(isDivideBy(100, 10, 5));
-// 0%2 -> 0
-// 3%2 -> 1
-// 4%2 -> 0
-// if (4%2 === 0) return true
-// if (5%2) return true
