@@ -17,5 +17,7 @@
     "url": "https://github.com/SerhiyStepanov/test-js/issues"
   },
   "homepage": "https://github.com/SerhiyStepanov/test-js#readme",
-  "dependencies": {}
+  "dependencies": {
+    "joi": "^17.2.1"
+  }
 }
