@@ -2,7 +2,7 @@
   "name": "test-js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,5 @@
     "url": "https://github.com/SerhiyStepanov/test-js/issues"
   },
   "homepage": "https://github.com/SerhiyStepanov/test-js#readme",
-  "dependencies": {
-    "joi": "^17.2.1"
-  }
+  "dependencies": {}
 }
