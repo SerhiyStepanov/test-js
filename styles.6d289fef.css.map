@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,kBACE,wBACF,CAEA,wBACE,oBACF,CAEA,0BACE,oBACF","file":"styles.6d289fef.css","sourceRoot":"..","sourcesContent":["#validation-input {\r\n  border: 3px solid #bdbdbd;\r\n}\r\n\r\n#validation-input.valid {\r\n  border-color: #4caf50;\r\n}\r\n\r\n#validation-input.invalid {\r\n  border-color: #f44336;\r\n}\r\n"]}
