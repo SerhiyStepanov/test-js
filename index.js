@@ -14,8 +14,8 @@ function onFooterBtnClick(event) {
       <li class="team-list">Serhiy Stepanov</li>
       <li class="team-list">Andrii</li>
       <li class="team-list">Valentyna Chudik</li>
-      <li class="team-list">Vetokh Marina</li>
-      <li class="team-list"></li>
+      <li class="team-list">Marina Vetokh</li>
+      <li class="team-list">X X X</li>
     </ul>
 `);
   instance.show();

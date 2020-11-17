@@ -92,11 +92,10 @@ body {
 }
 
 .page-footer {
-  width: 320px;
+  text-align: center;
 }
 
 .footer-text {
-  text-align: center;
   margin: 0;
   font-family: Roboto;
   font-style: normal;
