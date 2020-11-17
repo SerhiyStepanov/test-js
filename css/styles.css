@@ -153,6 +153,11 @@ body {
   color: #545454;
 }
 
+.footer-link:hover,
+.footer-link:focus {
+  color: #ff6b08;
+}
+
 .team {
   padding-left: 0;
 }
