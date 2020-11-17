@@ -14,6 +14,10 @@
   display: none;
 }
 
+body {
+  margin: 0;
+}
+
 /* LOADER_ELLIPS */
 
 .loader-ellips {
@@ -89,16 +93,21 @@
 
 .page-footer {
   width: 320px;
-  text-align: center;
 }
 
 .footer-text {
+  text-align: center;
+  margin: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.2;
   color: #545454;
+}
+
+.footer-svg {
+  margin: 0;
 }
 
 .footer-btn {
