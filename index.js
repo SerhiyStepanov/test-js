@@ -12,10 +12,10 @@ function onFooterBtnClick(event) {
     <ul class="team">
       <li class="team-list">Denys Kravchuk</li>
       <li class="team-list">Serhiy Stepanov</li>
-      <li class="team-list">Andrii</li>
+      <li class="team-list">Andrey Kovsh</li>
       <li class="team-list">Valentyna Chudik</li>
       <li class="team-list">Marina Vetokh</li>
-      <li class="team-list">X X X</li>
+      <li class="team-list"></li>
     </ul>
 `);
   instance.show();
