@@ -1,6 +1,3 @@
-import * as basicLightbox from "basiclightbox";
-import "basicLightbox/dist/basicLightbox.min.css";
-
 import onFooterBtnClick from "./js/basicLightbox";
 import view from "./js/goToTop";
 
