@@ -120,7 +120,7 @@ body {
 /* SVG for goToTop */
 .arrow-up {
   display: block;
-  fill: #545454;
+  fill: white;
   width: 10px;
   height: 10px;
 }
