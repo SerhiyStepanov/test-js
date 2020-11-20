@@ -18,10 +18,7 @@ body {
   margin: 0;
 }
 
-/*       TEAM  PROECT      */
-
 /* LOADER_ELLIPS */
-
 .loader-ellips {
   font-size: 16px;
   position: absolute;
@@ -84,7 +81,52 @@ body {
   animation-name: reveal;
   animation-direction: reverse;
 }
+/* LOADER_ELLIPS */
 
+/* BUTTON  goToTop */
+#goToTop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  padding: 6px 6px;
+  box-sizing: content-box;
+  background-color: #ff6b08;
+  font-size: 16px;
+  color: #fff;
+  mix-blend-mode: difference;
+  z-index: 1000;
+  display: none;
+}
+
+.goToTopdisplay {
+  animation: showGoToTop 0.4s ease-in 1;
+}
+
+.goToTophide {
+  animation: showGoToTop 0.4s ease-in 1 reverse;
+}
+
+@keyframes showGoToTop {
+  0% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* button  goToTop */
+/* SVG for goToTop */
+.arrow-up {
+  display: block;
+  fill: #545454;
+  width: 10px;
+  height: 10px;
+}
+/* svg for goToTop */
+
+/*       TEAM  PROECT      */
 /* footer */
 
 .section-footer {
@@ -176,46 +218,3 @@ body {
   list-style: none;
   color: #ff6b08;
 }
-
-/* button  goToTop */
-
-#goToTop {
-  cursor: pointer;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  border-radius: 50%;
-  padding: 6px 6px;
-  box-sizing: content-box;
-  background-color: #ff6b08;
-  font-size: 16px;
-  color: #fff;
-  mix-blend-mode: difference;
-  z-index: 1000;
-  display: none;
-}
-
-.goToTopdisplay {
-  animation: showGoToTop 0.4s ease-in 1;
-}
-
-.goToTophide {
-  animation: showGoToTop 0.4s ease-in 1 reverse;
-}
-
-@keyframes showGoToTop {
-  0% {
-    transform: translateY(80px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.arrow-up {
-  display: block;
-  fill: #545454;
-  width: 10px;
-  height: 10px;
-}
-/* button  goToTop */
