@@ -9,10 +9,6 @@
 #validation-input.invalid {
   border-color: #f44336;
 }
-/* 
-.hidden {
-  display: none;
-} */
 
 body {
   margin: 0;
@@ -81,21 +77,25 @@ body {
   animation-name: reveal;
   animation-direction: reverse;
 }
-/* LOADER_ELLIPS */
+
+.is-hidden {
+  display: none;
+}
+/* LOADER_ELLIPS  */
 
 /* BUTTON  goToTop */
 #goToTop {
   cursor: pointer;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 40px;
+  right: 40px;
   border-radius: 50%;
-  padding: 6px 6px;
+  padding: 8px 8px;
   box-sizing: content-box;
   background-color: #ff6b08;
-  font-size: 16px;
+  font-size: 24px;
   color: #fff;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   z-index: 1000;
   display: none;
 }
@@ -121,12 +121,17 @@ body {
 .arrow-up {
   display: block;
   fill: white;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
 }
 /* svg for goToTop */
 
 /*       TEAM  PROECT      */
+
+.main-content {
+  height: 1000px;
+  background-color: blanchedalmond;
+}
 /* footer */
 
 .section-footer {
@@ -220,11 +225,12 @@ body {
 }
 
 /* PAGINATION */
-/* .button-navigation {
+.button-navigation {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+  margin-top: 50px;
 }
 
 .pagination {
@@ -232,8 +238,6 @@ body {
   height: 40px;
   border: none;
   background-color: #ffffff;
-
-  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .pagination-side {
@@ -242,15 +246,18 @@ body {
   background: #f7f7f7;
   border: none;
   border-radius: 5px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.pagination {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #000000;
 }
 
 .pagination-current {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 5px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
   background-color: #ff6b08;
   color: #ffffff;
 }
@@ -258,4 +265,5 @@ body {
 .icon-arrow {
   width: 16px;
   height: 16px;
-} */
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
