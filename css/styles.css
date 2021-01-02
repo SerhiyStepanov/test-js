@@ -1,3 +1,7 @@
+.icategoriestem {
+  display: block;
+}
+
 #validation-input {
   border: 3px solid #bdbdbd;
 }
@@ -97,7 +101,7 @@ body {
   color: #fff;
   /* mix-blend-mode: difference; */
   z-index: 1000;
-  display: none;
+  /* display: none; */
 }
 
 .goToTopdisplay {
