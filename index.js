@@ -1,7 +1,8 @@
 // import onFooterBtnClick from "./js/basicLightbox";
-import view from "./js/goToTop";
-
+// import view from "./js/goToTop";
 // import { date } from "joi";
+
+import file from "./js/script-2";
 
 // const btnNav = document.querySelector(".button-navigation");
 
