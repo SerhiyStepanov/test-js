@@ -94,14 +94,14 @@ body {
   bottom: 40px;
   right: 40px;
   border-radius: 50%;
+  border: 1px solid rgb(128, 128, 128);
   padding: 8px 8px;
   box-sizing: content-box;
   background-color: #ff6b08;
-  font-size: 24px;
+  font-size: 32px;
   color: #fff;
-  /* mix-blend-mode: difference; */
   z-index: 1000;
-  /* display: none; */
+  /* mix-blend-mode: difference; */
 }
 
 .goToTopdisplay {
@@ -114,7 +114,7 @@ body {
 
 @keyframes showGoToTop {
   0% {
-    transform: translateY(80px);
+    transform: translateY(60px);
   }
   100% {
     transform: translateY(0px);
